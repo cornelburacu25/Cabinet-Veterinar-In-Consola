@@ -24,6 +24,18 @@ public class Consultatie
         this.esteFinalizata = false;
         this.serviciu = Serviciu.Nedeterminat;
     }
+
+    public Consultatie(Animal animal, String dataConsultatie, LocalTime oraConsultatie, String locatieConsultatie, Boolean esteConfirmata, Boolean esteFinalizata, Serviciu serviciu)
+    {
+        this.animal = animal;
+        this.dataConsultatie = dataConsultatie;
+        this.oraConsultatie = oraConsultatie;
+        this.locatieConsultatie = locatieConsultatie;
+        this.esteConfirmata = esteConfirmata;
+        this.esteFinalizata = esteFinalizata;
+        this.serviciu = serviciu;
+    }
+
     public void setAnimal(Animal animal)
     {
         this.animal = animal;
